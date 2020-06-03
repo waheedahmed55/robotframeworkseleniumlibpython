@@ -50,8 +50,10 @@ This file contains list of libraries installed in order to run test cases.
 # How to Setup & Run the project:-
 There are two ways:
 
-* Documentation :- Complete Technical Documentation is present under Doc directory to follow step by step.
-OR
+* Documentation :- Complete Technical Documentation is present under Doc directory to follow step by step.<br />
+
+#OR
+
 * Download the code from repository and run following command. It will download all libraries automatically
 ```python
    pip install Requirments.txt
