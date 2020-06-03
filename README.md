@@ -1,5 +1,5 @@
 <p align="center">
-<img width="850" height="200" src="Image/fulllogo.png">
+<img width="950" height="250" src="Image/fulllogo.png">
 </p>
 
 # Keyword Driven-Robotframework SeleniumLibrary in Python
@@ -18,7 +18,6 @@ The purpose of the project is to display Keyword driven framework for web applic
 * Screenshot:  Take screen shot API to cover the flow and caputer invalid screenshots
 * Implicit and explicit wait
 * Mouse action, Dropdown, Handling new tabs/windows,Scrolls,HTML Tables and handling browser Popup
-* Assertions : Hard & Soft
 
 ## Project Structure
 
