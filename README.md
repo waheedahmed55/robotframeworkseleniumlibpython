@@ -52,7 +52,7 @@ There are two ways:
 
 * Documentation :- Complete Technical Documentation is present under Doc directory to follow step by step.<br />
 
-# OR
+**OR**
 
 * Download the code from repository and run following command. It will download all libraries automatically
 ```python
