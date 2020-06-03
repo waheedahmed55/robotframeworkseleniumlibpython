@@ -1,4 +1,4 @@
-<img align="center" width="350" height="150" src="Image/fulllogo.png">
+<img align="center" width="550" height="150" src="Image/fulllogo.png">
 # Keyword Driven Robotframework SeleniumLibrary Automation Framework in Python
 
 The purpose of the project is to display Keyword driven framework for web applications using SeleniumLibrary in Robotframework.
