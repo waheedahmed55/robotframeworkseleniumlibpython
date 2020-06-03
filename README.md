@@ -18,7 +18,7 @@ The purpose of the project is to display Keyword driven framework for web applic
 * Assertions : Hard & Soft
 
 ## Project Structure
-<img align="right" width="350" height="150" src="Image/frameworkstructure.PNG"><br />
+<img align="center" width="350" height="150" src="Image/frameworkstructure.PNG"><br />
 
 * Helper:-
 In this directory we will have centralized the functions we will using in the tests to perform steps, this way it keeps code clean and easy to maintain. If need to change won’t have to change in all tests in corresponding test file infact just change here. Next you will observe no hard-coded values used in any of helper functions all test data is centralized as well in ApplicationProperties.robot. We have CommonHelper.robot which holds common keywords which will be used repeatedly to achieve reusability 
