@@ -8,12 +8,12 @@ The purpose of the project is to display Keyword driven framework for web applic
 
 ## Tools & Technologies
 
-* Automation Tools : Robotframework SeleniumLibrary
-* Language : Python
-* Data driven Testing Framework : Excellib
+* Automation Tools : Robotframework(3.2.1) SeleniumLibrary(4.4.0)
+* Language : Python (3.8)
+* Data driven Testing Framework : Excellib (2.0.0)
 * Object Repository Design Pattern : Page Object Model
 * Test Execution Report:  Robotframework HTML 
-* Test Execution Mode:  Parallel (usin Pabot)
+* Test Execution Mode:  Parallel (usin Pabot(1.7.0))
 * Browser Compatibility: Chrome and HeadlessChrome
 * Screenshot:  Take screen shot API to cover the flow and caputer invalid screenshots
 * Implicit and explicit wait
@@ -23,7 +23,7 @@ The purpose of the project is to display Keyword driven framework for web applic
 ## Project Structure
 
 <p align="center">
-<img width="250" height="150" src="Image/frameworkstructure.PNG"><br />
+<img width="250" height="200" src="Image/frameworkstructure.PNG"><br />
 </p>
 
 * Helper:-
