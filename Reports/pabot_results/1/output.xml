@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.1 on win32)" generated="20200520 11:25:58.009" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="FillContactForm" source="C:\Users\user\PycharmProjects\robotframeworkautomation\TestCases\FillContactForm.robot">
+<kw name="Open the browser in" library="Setup" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200520 11:26:01.440" level="INFO">Opening browser 'Chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20200520 11:26:01.440" endtime="20200520 11:26:07.854"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200520 11:26:07.855" endtime="20200520 11:26:09.851"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:09.852" endtime="20200520 11:26:09.855"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:01.440" endtime="20200520 11:26:09.855"></status>
+</kw>
+<test id="s1-s1-t1" name="Fill contact form for A1">
+<kw name="Go back to homepage" library="Setup" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:09.859" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" starttime="20200520 11:26:09.859" endtime="20200520 11:26:10.948"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:09.858" endtime="20200520 11:26:10.949"></status>
+</kw>
+<kw name="Fill Form by given data">
+<arguments>
+<arg>A1</arg>
+<arg>Test@gmail.com</arg>
+<arg>1234567890</arg>
+<arg>Test Subject 1</arg>
+<arg>Test Message 1</arg>
+</arguments>
+<kw name="Navigate to the site" library="FormHelper">
+<arguments>
+<arg>${ContactFormURL}</arg>
+</arguments>
+<kw name="Navigate to the page" library="SeleniumKeywords">
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:10.953" level="INFO">Opening url 'https://amjottawaeast-27647.web.app'</msg>
+<status status="PASS" starttime="20200520 11:26:10.952" endtime="20200520 11:26:13.538"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:10.951" endtime="20200520 11:26:13.538"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:10.950" endtime="20200520 11:26:13.539"></status>
+</kw>
+<kw name="Click on Contact link" library="FormHelper">
+<kw name="Click On Page Element" library="SeleniumKeywords">
+<arguments>
+<arg>${ContactLink}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:13.542" endtime="20200520 11:26:13.610"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:13.541" endtime="20200520 11:26:13.611"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:13.611" level="INFO">Clicking element 'css=a[href='/contact']'.</msg>
+<status status="PASS" starttime="20200520 11:26:13.611" endtime="20200520 11:26:13.819"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:13.540" endtime="20200520 11:26:13.820"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:13.539" endtime="20200520 11:26:13.820"></status>
+</kw>
+<kw name="Enter name" library="FormHelper">
+<arguments>
+<arg>${Name}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Name}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:15.823" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:13.822" endtime="20200520 11:26:15.823"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:15.826" endtime="20200520 11:26:15.849"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:15.825" endtime="20200520 11:26:15.849"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:15.850" endtime="20200520 11:26:15.898"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:15.921" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:15.898" endtime="20200520 11:26:15.921"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:15.922" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:15.922" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:15.922" endtime="20200520 11:26:15.922"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:15.923" endtime="20200520 11:26:15.923"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:15.824" endtime="20200520 11:26:15.923"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:15.924" level="INFO">Typing text 'A1' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20200520 11:26:15.924" endtime="20200520 11:26:16.009"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:13.821" endtime="20200520 11:26:16.009"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:13.820" endtime="20200520 11:26:16.009"></status>
+</kw>
+<kw name="Enter email" library="FormHelper">
+<arguments>
+<arg>${Email}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Email}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:18.015" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:16.012" endtime="20200520 11:26:18.015"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:18.017" endtime="20200520 11:26:18.031"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:18.016" endtime="20200520 11:26:18.031"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:18.032" endtime="20200520 11:26:18.055"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:18.069" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:18.055" endtime="20200520 11:26:18.069"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:18.070" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:18.070" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:18.070" endtime="20200520 11:26:18.070"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:18.070" endtime="20200520 11:26:18.071"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:18.015" endtime="20200520 11:26:18.071"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:18.071" level="INFO">Typing text 'Test@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200520 11:26:18.071" endtime="20200520 11:26:18.228"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:16.010" endtime="20200520 11:26:18.229"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:16.009" endtime="20200520 11:26:18.229"></status>
+</kw>
+<kw name="Enter MobileNumber" library="FormHelper">
+<arguments>
+<arg>${MobileNumber}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${MobileNumber}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:20.232" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:18.231" endtime="20200520 11:26:20.233"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:20.236" endtime="20200520 11:26:20.390"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:20.235" endtime="20200520 11:26:20.391"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:20.391" endtime="20200520 11:26:20.660"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:20.858" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:20.660" endtime="20200520 11:26:20.858"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:20.859" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:20.859" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:20.859" endtime="20200520 11:26:20.859"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:20.860" endtime="20200520 11:26:20.860"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:20.234" endtime="20200520 11:26:20.861"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:20.862" level="INFO">Typing text '1234567890' into text field 'id=mobile'.</msg>
+<status status="PASS" starttime="20200520 11:26:20.861" endtime="20200520 11:26:21.156"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:18.230" endtime="20200520 11:26:21.156"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:18.229" endtime="20200520 11:26:21.157"></status>
+</kw>
+<kw name="Enter Subject" library="FormHelper">
+<arguments>
+<arg>${Subject}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Subject}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:23.159" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:21.159" endtime="20200520 11:26:23.159"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:23.162" endtime="20200520 11:26:23.749"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:23.161" endtime="20200520 11:26:23.749"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:23.750" endtime="20200520 11:26:24.155"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:24.205" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:24.155" endtime="20200520 11:26:24.205"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:24.207" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:24.207" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:24.206" endtime="20200520 11:26:24.207"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:24.207" endtime="20200520 11:26:24.208"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:23.159" endtime="20200520 11:26:24.208"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:24.209" level="INFO">Typing text 'Test Subject 1' into text field 'id=subject'.</msg>
+<status status="PASS" starttime="20200520 11:26:24.209" endtime="20200520 11:26:26.159"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:21.158" endtime="20200520 11:26:26.160"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:21.157" endtime="20200520 11:26:26.160"></status>
+</kw>
+<kw name="Enter Message" library="FormHelper">
+<arguments>
+<arg>${Message}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Message}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:28.165" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:26.163" endtime="20200520 11:26:28.165"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:28.168" endtime="20200520 11:26:28.181"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:28.166" endtime="20200520 11:26:28.181"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:28.182" endtime="20200520 11:26:28.209"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:28.240" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:28.210" endtime="20200520 11:26:28.240"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:28.240" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:28.240" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:28.240" endtime="20200520 11:26:28.240"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:28.241" endtime="20200520 11:26:28.241"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:28.165" endtime="20200520 11:26:28.241"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:28.241" level="INFO">Typing text 'Test Message 1' into text field 'id=message'.</msg>
+<status status="PASS" starttime="20200520 11:26:28.241" endtime="20200520 11:26:28.873"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:26.162" endtime="20200520 11:26:28.874"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:26.160" endtime="20200520 11:26:28.874"></status>
+</kw>
+<kw name="Click on submit button" library="FormHelper">
+<kw name="Click On Button" library="SeleniumKeywords">
+<arguments>
+<arg>${SubmitButton}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:28.878" endtime="20200520 11:26:28.908"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:28.876" endtime="20200520 11:26:28.908"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:28.909" level="INFO">Clicking button 'css=button[type='submit']'.</msg>
+<status status="PASS" starttime="20200520 11:26:28.908" endtime="20200520 11:26:29.360"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:28.875" endtime="20200520 11:26:29.361"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:28.874" endtime="20200520 11:26:29.362"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:10.949" endtime="20200520 11:26:29.363"></status>
+</kw>
+<kw name="Capture screenshot if test failed" library="Setup" type="teardown">
+<arguments>
+<arg>Dummy</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>'{dt.second}{dt.minute}{dt.hour}{dt.day}{dt.month}{dt.year}'.format(dt=datetime.datetime.now())</arg>
+<arg>modules=datetime</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200520 11:26:29.366" level="INFO">${now} = 2926112052020</msg>
+<status status="PASS" starttime="20200520 11:26:29.364" endtime="20200520 11:26:29.366"></status>
+</kw>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>${OUTPUTDIR}/ScreenShot/${FileName}_${now}.png</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:29.366" endtime="20200520 11:26:29.367"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:29.363" endtime="20200520 11:26:29.367"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:09.856" endtime="20200520 11:26:29.367" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Fill contact form for A2">
+<kw name="Go back to homepage" library="Setup" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:29.373" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" starttime="20200520 11:26:29.373" endtime="20200520 11:26:30.821"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:29.371" endtime="20200520 11:26:30.822"></status>
+</kw>
+<kw name="Fill Form by given data">
+<arguments>
+<arg>A2</arg>
+<arg>Test@gmail.com</arg>
+<arg>1234567891</arg>
+<arg>Test Subject 2</arg>
+<arg>Test Message 2</arg>
+</arguments>
+<kw name="Navigate to the site" library="FormHelper">
+<arguments>
+<arg>${ContactFormURL}</arg>
+</arguments>
+<kw name="Navigate to the page" library="SeleniumKeywords">
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:30.830" level="INFO">Opening url 'https://amjottawaeast-27647.web.app'</msg>
+<status status="PASS" starttime="20200520 11:26:30.829" endtime="20200520 11:26:32.129"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:30.827" endtime="20200520 11:26:32.129"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:30.825" endtime="20200520 11:26:32.130"></status>
+</kw>
+<kw name="Click on Contact link" library="FormHelper">
+<kw name="Click On Page Element" library="SeleniumKeywords">
+<arguments>
+<arg>${ContactLink}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:32.139" endtime="20200520 11:26:32.289"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:32.136" endtime="20200520 11:26:32.290"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:32.291" level="INFO">Clicking element 'css=a[href='/contact']'.</msg>
+<status status="PASS" starttime="20200520 11:26:32.290" endtime="20200520 11:26:32.517"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:32.134" endtime="20200520 11:26:32.517"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:32.132" endtime="20200520 11:26:32.517"></status>
+</kw>
+<kw name="Enter name" library="FormHelper">
+<arguments>
+<arg>${Name}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Name}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:34.521" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:32.519" endtime="20200520 11:26:34.521"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:34.522" endtime="20200520 11:26:34.538"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:34.522" endtime="20200520 11:26:34.538"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:34.539" endtime="20200520 11:26:34.563"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:34.683" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:34.564" endtime="20200520 11:26:34.683"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:34.684" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:34.685" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:34.684" endtime="20200520 11:26:34.685"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:34.685" endtime="20200520 11:26:34.686"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:34.521" endtime="20200520 11:26:34.687"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:34.688" level="INFO">Typing text 'A2' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20200520 11:26:34.687" endtime="20200520 11:26:34.832"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:32.518" endtime="20200520 11:26:34.833"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:32.517" endtime="20200520 11:26:34.834"></status>
+</kw>
+<kw name="Enter email" library="FormHelper">
+<arguments>
+<arg>${Email}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Email}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:36.839" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:34.835" endtime="20200520 11:26:36.840"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:36.846" endtime="20200520 11:26:36.899"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:36.842" endtime="20200520 11:26:36.900"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:36.901" endtime="20200520 11:26:36.976"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:37.019" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:36.978" endtime="20200520 11:26:37.019"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:37.022" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:37.022" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:37.021" endtime="20200520 11:26:37.022"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:37.023" endtime="20200520 11:26:37.024"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:36.840" endtime="20200520 11:26:37.024"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:37.025" level="INFO">Typing text 'Test@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200520 11:26:37.024" endtime="20200520 11:26:37.225"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:34.834" endtime="20200520 11:26:37.225"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:34.834" endtime="20200520 11:26:37.225"></status>
+</kw>
+<kw name="Enter MobileNumber" library="FormHelper">
+<arguments>
+<arg>${MobileNumber}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${MobileNumber}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:39.228" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:37.228" endtime="20200520 11:26:39.228"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:39.231" endtime="20200520 11:26:39.251"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:39.230" endtime="20200520 11:26:39.251"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:39.251" endtime="20200520 11:26:39.351"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:39.409" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:39.351" endtime="20200520 11:26:39.409"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:39.413" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:39.413" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:39.410" endtime="20200520 11:26:39.413"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:39.414" endtime="20200520 11:26:39.415"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:39.228" endtime="20200520 11:26:39.415"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:39.416" level="INFO">Typing text '1234567891' into text field 'id=mobile'.</msg>
+<status status="PASS" starttime="20200520 11:26:39.416" endtime="20200520 11:26:39.605"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:37.227" endtime="20200520 11:26:39.605"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:37.226" endtime="20200520 11:26:39.606"></status>
+</kw>
+<kw name="Enter Subject" library="FormHelper">
+<arguments>
+<arg>${Subject}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Subject}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:41.609" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:39.608" endtime="20200520 11:26:41.609"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:41.614" endtime="20200520 11:26:41.902"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:41.612" endtime="20200520 11:26:41.902"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:41.903" endtime="20200520 11:26:42.086"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:42.296" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:42.086" endtime="20200520 11:26:42.297"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:42.298" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:42.298" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:42.297" endtime="20200520 11:26:42.298"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:42.298" endtime="20200520 11:26:42.299"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:41.610" endtime="20200520 11:26:42.299"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:42.300" level="INFO">Typing text 'Test Subject 2' into text field 'id=subject'.</msg>
+<status status="PASS" starttime="20200520 11:26:42.299" endtime="20200520 11:26:43.629"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:39.607" endtime="20200520 11:26:43.629"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:39.606" endtime="20200520 11:26:43.630"></status>
+</kw>
+<kw name="Enter Message" library="FormHelper">
+<arguments>
+<arg>${Message}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Message}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:45.633" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:43.633" endtime="20200520 11:26:45.634"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:45.637" endtime="20200520 11:26:46.275"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:45.635" endtime="20200520 11:26:46.275"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:46.276" endtime="20200520 11:26:47.701"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:26:48.309" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:26:47.701" endtime="20200520 11:26:48.309"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:26:48.310" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:26:48.311" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:26:48.310" endtime="20200520 11:26:48.311"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:48.311" endtime="20200520 11:26:48.312"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:45.634" endtime="20200520 11:26:48.313"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:48.314" level="INFO">Typing text 'Test Message 2' into text field 'id=message'.</msg>
+<status status="PASS" starttime="20200520 11:26:48.313" endtime="20200520 11:26:49.438"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:43.631" endtime="20200520 11:26:49.438"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:43.630" endtime="20200520 11:26:49.438"></status>
+</kw>
+<kw name="Click on submit button" library="FormHelper">
+<kw name="Click On Button" library="SeleniumKeywords">
+<arguments>
+<arg>${SubmitButton}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:49.441" endtime="20200520 11:26:49.467"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:49.440" endtime="20200520 11:26:49.467"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:49.468" level="INFO">Clicking button 'css=button[type='submit']'.</msg>
+<status status="PASS" starttime="20200520 11:26:49.467" endtime="20200520 11:26:49.649"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:49.439" endtime="20200520 11:26:49.649"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:49.439" endtime="20200520 11:26:49.649"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:30.822" endtime="20200520 11:26:49.649"></status>
+</kw>
+<kw name="Capture screenshot if test failed" library="Setup" type="teardown">
+<arguments>
+<arg>Dummy</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>'{dt.second}{dt.minute}{dt.hour}{dt.day}{dt.month}{dt.year}'.format(dt=datetime.datetime.now())</arg>
+<arg>modules=datetime</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200520 11:26:49.652" level="INFO">${now} = 4926112052020</msg>
+<status status="PASS" starttime="20200520 11:26:49.651" endtime="20200520 11:26:49.652"></status>
+</kw>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>${OUTPUTDIR}/ScreenShot/${FileName}_${now}.png</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:49.653" endtime="20200520 11:26:49.653"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:49.650" endtime="20200520 11:26:49.653"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:29.368" endtime="20200520 11:26:49.654" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Fill contact form for A3">
+<kw name="Go back to homepage" library="Setup" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:49.657" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" starttime="20200520 11:26:49.657" endtime="20200520 11:26:51.721"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:49.656" endtime="20200520 11:26:51.721"></status>
+</kw>
+<kw name="Fill Form by given data">
+<arguments>
+<arg>A3</arg>
+<arg>Test@gmail.com</arg>
+<arg>1234567892</arg>
+<arg>Test Subject 3</arg>
+<arg>Test Message 3</arg>
+</arguments>
+<kw name="Navigate to the site" library="FormHelper">
+<arguments>
+<arg>${ContactFormURL}</arg>
+</arguments>
+<kw name="Navigate to the page" library="SeleniumKeywords">
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:51.726" level="INFO">Opening url 'https://amjottawaeast-27647.web.app'</msg>
+<status status="PASS" starttime="20200520 11:26:51.724" endtime="20200520 11:26:57.146"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:51.723" endtime="20200520 11:26:57.146"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:51.722" endtime="20200520 11:26:57.147"></status>
+</kw>
+<kw name="Click on Contact link" library="FormHelper">
+<kw name="Click On Page Element" library="SeleniumKeywords">
+<arguments>
+<arg>${ContactLink}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:57.150" endtime="20200520 11:26:59.380"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:57.149" endtime="20200520 11:26:59.381"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:59.382" level="INFO">Clicking element 'css=a[href='/contact']'.</msg>
+<status status="PASS" starttime="20200520 11:26:59.381" endtime="20200520 11:27:02.219"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:57.148" endtime="20200520 11:27:02.220"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:57.147" endtime="20200520 11:27:02.220"></status>
+</kw>
+<kw name="Enter name" library="FormHelper">
+<arguments>
+<arg>${Name}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Name}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:27:04.231" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:27:02.228" endtime="20200520 11:27:04.231"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:04.233" endtime="20200520 11:27:04.274"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:04.232" endtime="20200520 11:27:04.274"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:04.275" endtime="20200520 11:27:04.474"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:27:04.644" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:27:04.476" endtime="20200520 11:27:04.644"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:27:04.645" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:27:04.645" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:27:04.644" endtime="20200520 11:27:04.645"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:04.646" endtime="20200520 11:27:04.647"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:04.231" endtime="20200520 11:27:04.648"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:04.650" level="INFO">Typing text 'A3' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20200520 11:27:04.649" endtime="20200520 11:27:05.166"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:02.223" endtime="20200520 11:27:05.167"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:02.220" endtime="20200520 11:27:05.167"></status>
+</kw>
+<kw name="Enter email" library="FormHelper">
+<arguments>
+<arg>${Email}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Email}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:27:07.172" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:27:05.171" endtime="20200520 11:27:07.172"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:07.176" endtime="20200520 11:27:07.219"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:07.173" endtime="20200520 11:27:07.220"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:07.220" endtime="20200520 11:27:07.305"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:27:07.355" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:27:07.305" endtime="20200520 11:27:07.355"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:27:07.356" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:27:07.356" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:27:07.355" endtime="20200520 11:27:07.356"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:07.356" endtime="20200520 11:27:07.357"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:07.172" endtime="20200520 11:27:07.359"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:07.361" level="INFO">Typing text 'Test@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200520 11:27:07.360" endtime="20200520 11:27:07.790"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:05.169" endtime="20200520 11:27:07.791"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:05.167" endtime="20200520 11:27:07.792"></status>
+</kw>
+<kw name="Enter MobileNumber" library="FormHelper">
+<arguments>
+<arg>${MobileNumber}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${MobileNumber}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:27:09.798" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:27:07.795" endtime="20200520 11:27:09.798"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:09.801" endtime="20200520 11:27:09.932"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:09.799" endtime="20200520 11:27:09.932"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:09.932" endtime="20200520 11:27:10.349"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:27:11.072" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:27:10.349" endtime="20200520 11:27:11.072"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:27:11.073" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:27:11.073" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:27:11.073" endtime="20200520 11:27:11.074"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:11.074" endtime="20200520 11:27:11.077"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:09.798" endtime="20200520 11:27:11.077"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:11.079" level="INFO">Typing text '1234567892' into text field 'id=mobile'.</msg>
+<status status="PASS" starttime="20200520 11:27:11.078" endtime="20200520 11:27:13.089"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:07.794" endtime="20200520 11:27:13.089"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:07.792" endtime="20200520 11:27:13.091"></status>
+</kw>
+<kw name="Enter Subject" library="FormHelper">
+<arguments>
+<arg>${Subject}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Subject}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:27:15.097" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:27:13.095" endtime="20200520 11:27:15.097"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:15.100" endtime="20200520 11:27:15.141"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:15.099" endtime="20200520 11:27:15.142"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:15.142" endtime="20200520 11:27:15.232"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:27:15.466" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:27:15.233" endtime="20200520 11:27:15.466"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:27:15.467" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:27:15.467" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:27:15.466" endtime="20200520 11:27:15.467"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:15.467" endtime="20200520 11:27:15.468"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:15.097" endtime="20200520 11:27:15.469"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:15.470" level="INFO">Typing text 'Test Subject 3' into text field 'id=subject'.</msg>
+<status status="PASS" starttime="20200520 11:27:15.469" endtime="20200520 11:27:20.670"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:13.094" endtime="20200520 11:27:20.670"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:13.092" endtime="20200520 11:27:20.670"></status>
+</kw>
+<kw name="Enter Message" library="FormHelper">
+<arguments>
+<arg>${Message}</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${Message}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:27:22.677" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:27:20.673" endtime="20200520 11:27:22.678"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:22.682" endtime="20200520 11:27:22.749"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:22.680" endtime="20200520 11:27:22.750"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:22.750" endtime="20200520 11:27:23.057"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:27:23.283" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:27:23.059" endtime="20200520 11:27:23.283"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:27:23.284" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:27:23.284" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:27:23.283" endtime="20200520 11:27:23.285"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:23.285" endtime="20200520 11:27:23.286"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:22.678" endtime="20200520 11:27:23.286"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:23.288" level="INFO">Typing text 'Test Message 3' into text field 'id=message'.</msg>
+<status status="PASS" starttime="20200520 11:27:23.287" endtime="20200520 11:27:23.802"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:20.671" endtime="20200520 11:27:23.803"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:20.671" endtime="20200520 11:27:23.803"></status>
+</kw>
+<kw name="Click on submit button" library="FormHelper">
+<kw name="Click On Button" library="SeleniumKeywords">
+<arguments>
+<arg>${SubmitButton}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:23.809" endtime="20200520 11:27:23.838"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:23.806" endtime="20200520 11:27:23.839"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:23.841" level="INFO">Clicking button 'css=button[type='submit']'.</msg>
+<status status="PASS" starttime="20200520 11:27:23.839" endtime="20200520 11:27:24.080"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:23.804" endtime="20200520 11:27:24.081"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:23.803" endtime="20200520 11:27:24.081"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:51.721" endtime="20200520 11:27:24.082"></status>
+</kw>
+<kw name="Capture screenshot if test failed" library="Setup" type="teardown">
+<arguments>
+<arg>Dummy</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>'{dt.second}{dt.minute}{dt.hour}{dt.day}{dt.month}{dt.year}'.format(dt=datetime.datetime.now())</arg>
+<arg>modules=datetime</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200520 11:27:24.085" level="INFO">${now} = 2427112052020</msg>
+<status status="PASS" starttime="20200520 11:27:24.084" endtime="20200520 11:27:24.085"></status>
+</kw>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>${OUTPUTDIR}/ScreenShot/${FileName}_${now}.png</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:24.085" endtime="20200520 11:27:24.086"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:24.082" endtime="20200520 11:27:24.086"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:49.655" endtime="20200520 11:27:24.086" critical="yes"></status>
+</test>
+<kw name="Close All Browser Window" library="Setup" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200520 11:27:24.092" endtime="20200520 11:27:28.502"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:24.089" endtime="20200520 11:27:28.502"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:25:58.040" endtime="20200520 11:27:28.502"></status>
+</suite>
+<status status="PASS" starttime="20200520 11:25:58.009" endtime="20200520 11:27:28.517"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" id="s1-s1" name="FillContactForm">Suites.FillContactForm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

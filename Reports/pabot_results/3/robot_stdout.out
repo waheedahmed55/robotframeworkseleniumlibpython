@@ -1,0 +1,47 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.HandleTable                                                            
+==============================================================================
+Handle Table                                                          5
+	
+	
+Students	
+Faculty	
+Babies	
+Cats	
+	
+Understand html	
+60%	
+55%	
+5%	
+4%	
+	
+Sort of get it	
+30%	
+30%	
+10%	
+5%	
+	
+Don't get it	
+8%	
+5%	
+80%	
+21%	
+	
+Chase mice	
+2%	
+10%	
+5%	
+70%	
+| PASS |
+------------------------------------------------------------------------------
+Suites.HandleTable                                                    | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\user\PycharmProjects\robotframeworkautomation\Reports\pabot_results\3\output.xml

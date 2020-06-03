@@ -1,0 +1,29 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.HandleWindow                                                           
+==============================================================================
+Manage Tabbed window                                                  Frames & windows
+Sakinalium | Home
+Frames & windows
+| PASS |
+------------------------------------------------------------------------------
+Manage Browser                                                        Frames & windows
+Sakinalium | Home
+Frames & windows
+| PASS |
+------------------------------------------------------------------------------
+Manage Multiple window                                                Frames & windows
+Index
+Frames & windows
+| PASS |
+------------------------------------------------------------------------------
+Suites.HandleWindow                                                   | PASS |
+3 critical tests, 3 passed, 0 failed
+3 tests total, 3 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+3 critical tests, 3 passed, 0 failed
+3 tests total, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\user\PycharmProjects\robotframeworkautomation\Reports\pabot_results\4\output.xml

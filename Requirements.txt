@@ -1,0 +1,7 @@
+robotframework
+robotframework-seleniumlibrary
+robotframework-pabot
+robotframework-datadriver
+xlrd
+robotframework-excellib
+robotframework-requests

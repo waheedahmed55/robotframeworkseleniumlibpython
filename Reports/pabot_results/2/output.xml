@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.1 on win32)" generated="20200520 11:25:58.024" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="HandleAndFrame" source="C:\Users\user\PycharmProjects\robotframeworkautomation\TestCases\HandleAndFrame.robot">
+<kw name="Open the browser in" library="Setup" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200520 11:25:58.457" level="INFO">Opening browser 'Chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20200520 11:25:58.457" endtime="20200520 11:26:02.857"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200520 11:26:02.858" endtime="20200520 11:26:04.413"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:04.413" endtime="20200520 11:26:04.415"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:25:58.457" endtime="20200520 11:26:04.415"></status>
+</kw>
+<test id="s1-s1-t1" name="Verify Alert">
+<kw name="Go back to homepage" library="Setup" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:04.415" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" starttime="20200520 11:26:04.415" endtime="20200520 11:26:05.894"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:04.415" endtime="20200520 11:26:05.894"></status>
+</kw>
+<kw name="Navigate to the site" library="HandleHelper">
+<arguments>
+<arg>${AlertPageUrl}</arg>
+</arguments>
+<kw name="Navigate to the page" library="SeleniumKeywords">
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:05.896" level="INFO">Opening url 'http://demo.automationtesting.in/Alerts.html'</msg>
+<status status="PASS" starttime="20200520 11:26:05.896" endtime="20200520 11:26:12.473"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:05.895" endtime="20200520 11:26:12.474"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:05.894" endtime="20200520 11:26:12.474"></status>
+</kw>
+<kw name="Click on the alert button" library="HandleHelper">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:15.476" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:12.475" endtime="20200520 11:26:15.476"></status>
+</kw>
+<kw name="Click On Button" library="SeleniumKeywords">
+<arguments>
+<arg>${NormalAlert}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:15.478" endtime="20200520 11:26:15.511"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:15.477" endtime="20200520 11:26:15.511"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:15.512" level="INFO">Clicking button 'css=button[onclick='alertbox()']'.</msg>
+<status status="PASS" starttime="20200520 11:26:15.511" endtime="20200520 11:26:15.637"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:15.476" endtime="20200520 11:26:15.637"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:18.640" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:15.637" endtime="20200520 11:26:18.640"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:12.474" endtime="20200520 11:26:18.641"></status>
+</kw>
+<kw name="Accept the alert" library="HandleHelper">
+<kw name="Handle the alert box" library="SeleniumKeywords">
+<arguments>
+<arg>ACCEPT</arg>
+</arguments>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>${action}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:18.643" endtime="20200520 11:26:18.791"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:18.642" endtime="20200520 11:26:18.791"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:18.641" endtime="20200520 11:26:18.792"></status>
+</kw>
+<kw name="Capture screenshot if test failed" library="Setup" type="teardown">
+<arguments>
+<arg>Dummy</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>'{dt.second}{dt.minute}{dt.hour}{dt.day}{dt.month}{dt.year}'.format(dt=datetime.datetime.now())</arg>
+<arg>modules=datetime</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200520 11:26:18.796" level="INFO">${now} = 1826112052020</msg>
+<status status="PASS" starttime="20200520 11:26:18.795" endtime="20200520 11:26:18.796"></status>
+</kw>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>${OUTPUTDIR}/ScreenShot/${FileName}_${now}.png</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:18.799" endtime="20200520 11:26:18.800"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:18.793" endtime="20200520 11:26:18.801"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:04.415" endtime="20200520 11:26:18.801" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Verify Alert with cancel">
+<kw name="Go back to homepage" library="Setup" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:18.807" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" starttime="20200520 11:26:18.806" endtime="20200520 11:26:19.844"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:18.805" endtime="20200520 11:26:19.844"></status>
+</kw>
+<kw name="Navigate to the site" library="HandleHelper">
+<arguments>
+<arg>${AlertPageUrl}</arg>
+</arguments>
+<kw name="Navigate to the page" library="SeleniumKeywords">
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:19.848" level="INFO">Opening url 'http://demo.automationtesting.in/Alerts.html'</msg>
+<status status="PASS" starttime="20200520 11:26:19.847" endtime="20200520 11:26:26.997"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:19.846" endtime="20200520 11:26:26.997"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:19.845" endtime="20200520 11:26:26.998"></status>
+</kw>
+<kw name="Cllick on Alert with Cancel link" library="HandleHelper">
+<kw name="Click On Page Element" library="SeleniumKeywords">
+<arguments>
+<arg>${AlertWithCancelLink}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:27.000" endtime="20200520 11:26:27.019"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:26.999" endtime="20200520 11:26:27.020"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:27.021" level="INFO">Clicking element 'css=a[href='#CancelTab']'.</msg>
+<status status="PASS" starttime="20200520 11:26:27.020" endtime="20200520 11:26:27.127"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:26.998" endtime="20200520 11:26:27.127"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:26.998" endtime="20200520 11:26:27.128"></status>
+</kw>
+<kw name="Click on the alert with Cancel button" library="HandleHelper">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:30.130" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:27.129" endtime="20200520 11:26:30.130"></status>
+</kw>
+<kw name="Click On Button" library="SeleniumKeywords">
+<arguments>
+<arg>${AlertWithCancel}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:30.136" endtime="20200520 11:26:30.220"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:30.134" endtime="20200520 11:26:30.220"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:30.221" level="INFO">Clicking button 'css=button[onclick='confirmbox()']'.</msg>
+<status status="PASS" starttime="20200520 11:26:30.221" endtime="20200520 11:26:30.408"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:30.131" endtime="20200520 11:26:30.408"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:33.410" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:30.409" endtime="20200520 11:26:33.410"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:27.129" endtime="20200520 11:26:33.410"></status>
+</kw>
+<kw name="Accept the alert" library="HandleHelper">
+<kw name="Handle the alert box" library="SeleniumKeywords">
+<arguments>
+<arg>ACCEPT</arg>
+</arguments>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>${action}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:33.413" endtime="20200520 11:26:33.470"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:33.412" endtime="20200520 11:26:33.470"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:33.411" endtime="20200520 11:26:33.471"></status>
+</kw>
+<kw name="Click on the alert with Cancel button" library="HandleHelper">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:36.474" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:33.472" endtime="20200520 11:26:36.474"></status>
+</kw>
+<kw name="Click On Button" library="SeleniumKeywords">
+<arguments>
+<arg>${AlertWithCancel}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:36.481" endtime="20200520 11:26:36.604"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:36.480" endtime="20200520 11:26:36.604"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:36.604" level="INFO">Clicking button 'css=button[onclick='confirmbox()']'.</msg>
+<status status="PASS" starttime="20200520 11:26:36.604" endtime="20200520 11:26:36.751"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:36.478" endtime="20200520 11:26:36.752"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200520 11:26:39.755" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200520 11:26:36.752" endtime="20200520 11:26:39.755"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:33.471" endtime="20200520 11:26:39.755"></status>
+</kw>
+<kw name="Dismiss the alert" library="HandleHelper">
+<kw name="Handle the alert box" library="SeleniumKeywords">
+<arguments>
+<arg>DISMISS</arg>
+</arguments>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>${action}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:39.757" endtime="20200520 11:26:39.767"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:39.756" endtime="20200520 11:26:39.767"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:39.755" endtime="20200520 11:26:39.767"></status>
+</kw>
+<kw name="Capture screenshot if test failed" library="Setup" type="teardown">
+<arguments>
+<arg>Dummy</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>'{dt.second}{dt.minute}{dt.hour}{dt.day}{dt.month}{dt.year}'.format(dt=datetime.datetime.now())</arg>
+<arg>modules=datetime</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200520 11:26:39.770" level="INFO">${now} = 3926112052020</msg>
+<status status="PASS" starttime="20200520 11:26:39.769" endtime="20200520 11:26:39.770"></status>
+</kw>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>${OUTPUTDIR}/ScreenShot/${FileName}_${now}.png</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:39.770" endtime="20200520 11:26:39.770"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:39.768" endtime="20200520 11:26:39.771"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:18.803" endtime="20200520 11:26:39.771" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Verify Alert with Textbox">
+<kw name="Go back to homepage" library="Setup" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:39.775" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" starttime="20200520 11:26:39.774" endtime="20200520 11:26:41.304"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:39.773" endtime="20200520 11:26:41.304"></status>
+</kw>
+<kw name="Navigate to the site" library="HandleHelper">
+<arguments>
+<arg>${AlertPageUrl}</arg>
+</arguments>
+<kw name="Navigate to the page" library="SeleniumKeywords">
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:26:41.307" level="INFO">Opening url 'http://demo.automationtesting.in/Alerts.html'</msg>
+<status status="PASS" starttime="20200520 11:26:41.307" endtime="20200520 11:27:06.542"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:41.306" endtime="20200520 11:27:06.542"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:41.305" endtime="20200520 11:27:06.543"></status>
+</kw>
+<kw name="Click on Alert with Textbox link" library="HandleHelper">
+<kw name="Click On Page Element" library="SeleniumKeywords">
+<arguments>
+<arg>${AlertWithTextBoxLink}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:06.546" endtime="20200520 11:27:06.568"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:06.545" endtime="20200520 11:27:06.568"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:06.569" level="INFO">Clicking element 'css=a[href='#Textbox']'.</msg>
+<status status="PASS" starttime="20200520 11:27:06.569" endtime="20200520 11:27:06.929"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:06.544" endtime="20200520 11:27:06.930"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:06.543" endtime="20200520 11:27:06.930"></status>
+</kw>
+<kw name="Click on the alert with textbox button" library="HandleHelper">
+<kw name="Click On Button" library="SeleniumKeywords">
+<arguments>
+<arg>${AlertWithTextbox}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:06.933" endtime="20200520 11:27:06.956"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:06.932" endtime="20200520 11:27:06.956"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:06.957" level="INFO">Clicking button 'css=button[onclick='promptbox()']'.</msg>
+<status status="PASS" starttime="20200520 11:27:06.956" endtime="20200520 11:27:07.191"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:06.931" endtime="20200520 11:27:07.192"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:06.930" endtime="20200520 11:27:07.192"></status>
+</kw>
+<kw name="Enter text in alert" library="HandleHelper">
+<arguments>
+<arg>Dummy Alert Text</arg>
+</arguments>
+<kw name="Enter text in alert box" library="SeleniumKeywords">
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<kw name="Input Text Into Alert" library="SeleniumLibrary">
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:07.195" endtime="20200520 11:27:07.216"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:07.194" endtime="20200520 11:27:07.217"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200520 11:27:10.219" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200520 11:27:07.217" endtime="20200520 11:27:10.219"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:07.193" endtime="20200520 11:27:10.220"></status>
+</kw>
+<kw name="Capture screenshot if test failed" library="Setup" type="teardown">
+<arguments>
+<arg>Dummy</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>'{dt.second}{dt.minute}{dt.hour}{dt.day}{dt.month}{dt.year}'.format(dt=datetime.datetime.now())</arg>
+<arg>modules=datetime</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200520 11:27:10.222" level="INFO">${now} = 1027112052020</msg>
+<status status="PASS" starttime="20200520 11:27:10.222" endtime="20200520 11:27:10.223"></status>
+</kw>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>${OUTPUTDIR}/ScreenShot/${FileName}_${now}.png</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:10.223" endtime="20200520 11:27:10.223"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:10.220" endtime="20200520 11:27:10.224"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:39.772" endtime="20200520 11:27:10.224" critical="yes"></status>
+</test>
+<test id="s1-s1-t4" name="Verify Frame">
+<kw name="Go back to homepage" library="Setup" type="setup">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:10.235" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" starttime="20200520 11:27:10.235" endtime="20200520 11:27:13.337"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:10.234" endtime="20200520 11:27:13.337"></status>
+</kw>
+<kw name="Navigate to the site" library="HandleHelper">
+<arguments>
+<arg>${FrameUrl}</arg>
+</arguments>
+<kw name="Navigate to the page" library="SeleniumKeywords">
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:13.340" level="INFO">Opening url 'http://demo.automationtesting.in/Frames.html'</msg>
+<status status="PASS" starttime="20200520 11:27:13.339" endtime="20200520 11:27:24.985"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:13.338" endtime="20200520 11:27:24.985"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:13.337" endtime="20200520 11:27:24.986"></status>
+</kw>
+<kw name="Switch to the frame" library="HandleHelper">
+<kw name="Select a Frame" library="SeleniumKeywords">
+<arguments>
+<arg>${SingleFrame}</arg>
+</arguments>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:24.989" level="INFO">Selecting frame 'id=singleframe'.</msg>
+<status status="PASS" starttime="20200520 11:27:24.989" endtime="20200520 11:27:25.151"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:24.987" endtime="20200520 11:27:25.152"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:24.986" endtime="20200520 11:27:25.153"></status>
+</kw>
+<kw name="Enter text in the field" library="HandleHelper">
+<arguments>
+<arg>Dummy Alert Text</arg>
+</arguments>
+<kw name="Set Value For Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${InputText}</arg>
+<arg>${text}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200520 11:27:27.159" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200520 11:27:25.156" endtime="20200520 11:27:27.159"></status>
+</kw>
+<kw name="Clear Input Field" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait For Element Present" library="SeleniumKeywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>5</arg>
+<arg>Element not found in 5 seconds</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<arg>${err_msg}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:27.165" endtime="20200520 11:27:27.218"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:27.162" endtime="20200520 11:27:27.218"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:27.219" endtime="20200520 11:27:27.239"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200520 11:27:27.252" level="INFO">${value} = </msg>
+<status status="PASS" starttime="20200520 11:27:27.239" endtime="20200520 11:27:27.252"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${backspaces count}</var>
+</assign>
+<msg timestamp="20200520 11:27:27.252" level="INFO">Length is 0</msg>
+<msg timestamp="20200520 11:27:27.253" level="INFO">${backspaces count} = 0</msg>
+<status status="PASS" starttime="20200520 11:27:27.252" endtime="20200520 11:27:27.253"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"""${value}""" != ''</arg>
+<arg>Repeat Keyword</arg>
+<arg>${backspaces count +1}</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>\\08</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:27.253" endtime="20200520 11:27:27.253"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:27.160" endtime="20200520 11:27:27.253"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${inputval}</arg>
+</arguments>
+<msg timestamp="20200520 11:27:27.254" level="INFO">Typing text 'Dummy Alert Text' into text field 'css=input[type='text']'.</msg>
+<status status="PASS" starttime="20200520 11:27:27.253" endtime="20200520 11:27:27.402"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:25.155" endtime="20200520 11:27:27.402"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:25.154" endtime="20200520 11:27:27.402"></status>
+</kw>
+<kw name="Come out from frame" library="HandleHelper">
+<kw name="UnSelect a Frame" library="SeleniumKeywords">
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20200520 11:27:27.404" endtime="20200520 11:27:27.407"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:27.403" endtime="20200520 11:27:27.407"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:27.402" endtime="20200520 11:27:27.408"></status>
+</kw>
+<kw name="Capture screenshot if test failed" library="Setup" type="teardown">
+<arguments>
+<arg>Dummy</arg>
+</arguments>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>'{dt.second}{dt.minute}{dt.hour}{dt.day}{dt.month}{dt.year}'.format(dt=datetime.datetime.now())</arg>
+<arg>modules=datetime</arg>
+</arguments>
+<assign>
+<var>${now}</var>
+</assign>
+<msg timestamp="20200520 11:27:27.410" level="INFO">${now} = 2727112052020</msg>
+<status status="PASS" starttime="20200520 11:27:27.409" endtime="20200520 11:27:27.410"></status>
+</kw>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>${OUTPUTDIR}/ScreenShot/${FileName}_${now}.png</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:27:27.411" endtime="20200520 11:27:27.411"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:27.408" endtime="20200520 11:27:27.411"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:10.229" endtime="20200520 11:27:27.412" critical="yes"></status>
+</test>
+<kw name="Close All Browser Window" library="Setup" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200520 11:27:27.414" endtime="20200520 11:27:31.382"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:27:27.414" endtime="20200520 11:27:31.382"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:25:58.087" endtime="20200520 11:27:31.382"></status>
+</suite>
+<status status="PASS" starttime="20200520 11:25:58.024" endtime="20200520 11:27:31.387"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Suites">Suites</stat>
+<stat pass="4" fail="0" id="s1-s1" name="HandleAndFrame">Suites.HandleAndFrame</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,9 @@
+datasources:1721dca3744bc2080e69cfbbd7bbdea6cb51d925
+commandlineoptions:690611fc3044860a7590e414b4bf0214ad18c978
+suitesfrom:no-suites-from-option
+file:2149080d27035889204a84d09634707f714dc3c0
+--test Suites.FillContactForm.Fill contact form for ${Name}
+--test Suites.HandleAndFrame.Verify Alert
+--test Suites.HandleAndFrame.Verify Alert with cancel
+--test Suites.HandleAndFrame.Verify Alert with Textbox
+--test Suites.HandleAndFrame.Verify Frame

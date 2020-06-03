@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.1 on win32)" generated="20200520 11:25:58.009" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="DataDriven" source="C:\Users\user\PycharmProjects\robotframeworkautomation\TestCases\DataDriven.robot">
+<test id="s1-s1-t1" name="Perform action on TestData1">
+<kw name="DataDriven Test cases">
+<arguments>
+<arg>TestData1</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${TestData}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:01.438" endtime="20200520 11:26:01.438"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:01.437" endtime="20200520 11:26:01.438"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:01.437" endtime="20200520 11:26:01.438" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Perform action on TestData2">
+<kw name="DataDriven Test cases">
+<arguments>
+<arg>TestData2</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${TestData}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:01.440" endtime="20200520 11:26:01.440"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:01.439" endtime="20200520 11:26:01.440"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:01.439" endtime="20200520 11:26:01.440" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Perform action on TestData3">
+<kw name="DataDriven Test cases">
+<arguments>
+<arg>TestData3</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${TestData}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:01.442" endtime="20200520 11:26:01.443"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:01.441" endtime="20200520 11:26:01.443"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:01.441" endtime="20200520 11:26:01.443" critical="yes"></status>
+</test>
+<test id="s1-s1-t4" name="Perform action on TestData4">
+<kw name="DataDriven Test cases">
+<arguments>
+<arg>TestData4</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${TestData}</arg>
+</arguments>
+<status status="PASS" starttime="20200520 11:26:01.445" endtime="20200520 11:26:01.445"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:01.445" endtime="20200520 11:26:01.446"></status>
+</kw>
+<status status="PASS" starttime="20200520 11:26:01.444" endtime="20200520 11:26:01.446" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200520 11:25:58.055" endtime="20200520 11:26:01.447"></status>
+</suite>
+<status status="PASS" starttime="20200520 11:25:58.009" endtime="20200520 11:26:01.450"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Suites">Suites</stat>
+<stat pass="4" fail="0" id="s1-s1" name="DataDriven">Suites.DataDriven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

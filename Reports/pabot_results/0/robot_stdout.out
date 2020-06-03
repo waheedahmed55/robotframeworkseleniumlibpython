@@ -1,0 +1,26 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.DataDriven                                                             
+==============================================================================
+Perform action on TestData1                                           TestData1
+| PASS |
+------------------------------------------------------------------------------
+Perform action on TestData2                                           TestData2
+| PASS |
+------------------------------------------------------------------------------
+Perform action on TestData3                                           TestData3
+| PASS |
+------------------------------------------------------------------------------
+Perform action on TestData4                                           TestData4
+| PASS |
+------------------------------------------------------------------------------
+Suites.DataDriven                                                     | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\user\PycharmProjects\robotframeworkautomation\Reports\pabot_results\0\output.xml

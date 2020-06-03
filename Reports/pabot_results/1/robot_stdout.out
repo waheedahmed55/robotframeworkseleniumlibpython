@@ -1,0 +1,20 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.FillContactForm                                                        
+==============================================================================
+Fill contact form for A1                                              | PASS |
+------------------------------------------------------------------------------
+Fill contact form for A2                                              | PASS |
+------------------------------------------------------------------------------
+Fill contact form for A3                                              | PASS |
+------------------------------------------------------------------------------
+Suites.FillContactForm                                                | PASS |
+3 critical tests, 3 passed, 0 failed
+3 tests total, 3 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+3 critical tests, 3 passed, 0 failed
+3 tests total, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\user\PycharmProjects\robotframeworkautomation\Reports\pabot_results\1\output.xml
