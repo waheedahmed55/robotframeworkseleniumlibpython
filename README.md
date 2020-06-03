@@ -1,5 +1,5 @@
 <p align="center">
-<img width="850" height="150" src="Image/fulllogo.png">
+<img width="850" height="200" src="Image/fulllogo.png">
 </p>
 
 # Keyword Driven-Robotframework SeleniumLibrary in Python
@@ -56,9 +56,19 @@ OR
 ```python
    pip install Requirments.txt
 ```
-* Project Path :-You have to select proper project path. Project path should be your project location where .setting and pom file were exist. Import existing maven project and click on next button.
-* Select the root directory the project is and Click Finish
-* Run pom.xml File:- You have to run pom.xml file as maven test.
+* Run Single Test Suite:- You want to run HandleWindow.robot test class which is under Smoke directory you will run using following command
+```python
+   robot -d “Reports” TestCases/Smoke/HandleWindow.robot
+```
+* Run All Test Suite:- You want to run all test classes which is under Smoke directory you will run using following command
+```python
+   robot -d “Reports” TestCases/Smoke/*.robot
+```
+* Run Test Suites Parallel:- You want to run test suites in parallel mode you will run using following command . This will launch 3 browser windows as we have set --processes 3
+```python
+   pabot --processes 3 --outputdir "Reports" TestCases/*.robot
+```
+
 
 
 
