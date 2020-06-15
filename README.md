@@ -13,11 +13,11 @@ The purpose of the project is to display Keyword driven framework for web applic
 * Data driven Testing Framework : Excellib (2.0.0)
 * Object Repository Design Pattern : Page Object Model
 * Test Execution Report:  Robotframework HTML 
-* Test Execution Mode:  Parallel (usin Pabot(1.7.0))
+* Test Execution Mode:  Parallel (using Pabot(1.7.0))
 * Browser Compatibility: Chrome and HeadlessChrome
 * Screenshot:  Take screen shot API to cover the flow and caputer invalid screenshots
 * Implicit and explicit wait
-* Mouse action, Dropdown, Handling new tabs/windows,Scrolls,HTML Tables and handling browser Popup
+* Features: Mouse action, Dropdown, Handling new tabs/windows,Scrolls,HTML Tables and handling browser Popup, REST API(RESTInstance), JSONLibrary, String & BuiltIn Keywords
 
 ## Project Structure
 
