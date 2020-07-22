@@ -17,7 +17,7 @@ The purpose of the project is to display Keyword driven framework for web applic
 * Browser Compatibility: Chrome and HeadlessChrome
 * Screenshot:  Take screen shot API to cover the flow and caputer invalid screenshots
 * Implicit and explicit wait
-* Features: Mouse action, Dropdown, Handling new tabs/windows,Scrolls,HTML Tables and handling browser Popup, REST API(RESTInstance), JSONLibrary, String & BuiltIn Keywords
+* Features: Mouse action, Dropdown, Handling new tabs/windows,Scrolls,HTML Tables and handling browser Popup, REST API(RESTInstance), JSONLibrary, DateTime, String & BuiltIn Keywords
 
 ## Project Structure
 
